@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    
+    <header class="header py-5">
+        <div class="container">
+            <div class="headerWrapper flex items-center justify-between">
+                <div class="headerLogo">
+                    <h2 class="text-secondary font-bold text-[2rem]">Physionic</h2>
+                </div>
+
+                <div class="headerNav hidden md:block">
+                    <ul class="flex gap-5">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="getAQuote hidden md:block">
+                    <a href="#" class="bg-primary p-3 rounded-md text-white font-semibold">Get a Quote now</a>
+                </div>
+
+                <div class="flex gap-6 md:hidden">
+                    <div class="searchAndCart flex gap-6">
+                        <i class="fa-solid fa-magnifying-glass text-darkGray text-2xl"></i>
+                        <i class="fa-solid fa-cart-shopping text-darkGray text-2xl"></i>
+                    </div>
+                    <div class="toggleMenu cursor-pointer">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="headerMobileNav bg-amber-200 transition-all duration-500">
+                <ul class="text-center text-[1.5rem] text-darkGray font-semibold py-5">
+                    <li><a class="block p-3" href="#">Home</a></li>
+                    <li><a class="block p-3" href="#">Product</a></li>
+                    <li><a class="block p-3" href="#">Contact</a></li>
+                    <li><a class="block p-3" href="#">Pricing</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner bg-blend-multiply bg-cover bg-no-repeat bg-darkGray bg-[url('/img/hero-cover.jpg')] py-10 text-center">
+        <div class="container">
+
+            <div class="bannerWrapper lg:flex lg:items-center">
+                <div>
+                    <h1 class="text-huge text-white font-semibold mb-3">Meet the Best Hospital</h1>
+                    <p class="text-white mb-6 w-[70%] mx-auto lg:w-[315px] lg:text-left">We know how large objects will act, but things on a small scale.</p>
+                    <a class="bg-primary mb-6 inline-block p-5 rounded-full text-white font-semibold" href="#">Get a Quote Now</a><br class="lg:hidden">
+                    <a class="border-white border inline-block p-5 rounded-full text-white font-semibold" href="#">Learn More</a>
+                </div>
+                <div class="bannerForm text-left bg-white p-10 rounded-lg w-[350px] mx-auto my-10">
+                    <h3 class="text-center text-[1.5rem] font-semibold mb-5">Book Appointment</h3>
+                    <form action="">
+                        <div class="inputGroup">
+                            <label for="">Name</label><br>
+                            <input class="p-3 w-full" type="text" placeholder="Fullname">
+                        </div>
+                        <div class="inputGroup">
+                            <label for="">Email</label><br>
+                            <input class="p-3 w-full" type="text" placeholder="Example@gmail.com">
+                        </div>
+                        <div class="inputGroup">
+                            <label for="">Department</label><br>
+                            <input class="p-3 w-full" type="text" placeholder="Fullname">
+                        </div>
+                        <div class="inputGroup">
+                            <label for="">Time</label><br>
+                            <input class="p-3 w-full" type="text" placeholder="Fullname">
+                        </div>
+                        <button class="bg-primary text-center w-full mt-5 p-5 rounded-lg text-white font-semibold">Book Appointment</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="medicine py-10">
+        <div class="container">
+            <h1 class="text-center font-bold text-[2.5rem] text-secondary">Leading Medicine</h1>
+            <p class="text-center text-darkGray mb-10 lg:w-[500px] lg:mx-auto">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+
+
+            <div class="card grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div class="medicineCard">
+                    <div class="flex justify-center items-center bg-[#D9EDFF] py-10 gap-3">
+                        <i class="fa-solid fa-expand p-5 bg-white rounded-full text-blue-500"></i>
+                        <h4 class="font-semibold text-secondary">Emergency Case</h4>
+                    </div>
+                    <div class="p-10 border border-[#D9EDFF]">
+                        <h6 class="font-semibold text-darkGray">-The best products start with Figma</h6>
+                        <h6 class="font-semibold text-darkGray">-Design with real data</h6>
+                        <h6 class="font-semibold text-darkGray">-Lightning fast prototyping</h6>
+                        <h6 class="font-semibold text-darkGray">-Fastest way to organize</h6>
+                        <h6 class="font-semibold text-darkGray">-Work at speed of thought</h6>
+                        <a href="#" class="text-primary font-semibold">Learn more</a>
+                    </div>
+                </div>
+                <div class="medicineCard">
+                    <div class="flex justify-center items-center bg-[#D9EDFF] py-10 gap-3">
+                        <i class="fa-solid fa-expand p-5 bg-white rounded-full text-blue-500"></i>
+                        <h4 class="font-semibold text-secondary">Cancer Care</h4>
+                    </div>
+                    <div class="p-10 border border-[#D9EDFF]">
+                        <h6 class="font-semibold text-darkGray">-The best products start with Figma</h6>
+                        <h6 class="font-semibold text-darkGray">-Design with real data</h6>
+                        <h6 class="font-semibold text-darkGray">-Lightning fast prototyping</h6>
+                        <h6 class="font-semibold text-darkGray">-Fastest way to organize</h6>
+                        <h6 class="font-semibold text-darkGray">-Work at speed of thought</h6>
+                        <a href="#" class="text-primary font-semibold">Learn more</a>
+                    </div>
+                </div>
+                <div class="medicineCard">
+                    <div class="flex justify-center items-center bg-[#D9EDFF] py-10 gap-3">
+                        <i class="fa-solid fa-expand p-5 bg-white rounded-full text-blue-500"></i>
+                        <h4 class="font-semibold text-secondary">Health Queries</h4>
+                    </div>
+                    <div class="p-10 border border-[#D9EDFF]">
+                        <h6 class="font-semibold text-darkGray">-The best products start with Figma</h6>
+                        <h6 class="font-semibold text-darkGray">-Design with real data</h6>
+                        <h6 class="font-semibold text-darkGray">-Lightning fast prototyping</h6>
+                        <h6 class="font-semibold text-darkGray">-Fastest way to organize</h6>
+                        <h6 class="font-semibold text-darkGray">-Work at speed of thought</h6>
+                        <a href="#" class="text-primary font-semibold">Learn more</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="testimonials py-10 bg-lightGray">
+        <div class="container">
+            <h1 class="text-center font-bold text-[2.5rem] text-secondary mb-10">What Clients Say</h1>
+
+            <div class="card grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div class="p-10 border border-[#DEDEDE] bg-white">
+                    <i class="text-yellow-300 fa-solid fa-star"></i>
+                    <i class="text-yellow-300 fa-solid fa-star"></i>
+                    <i class="text-yellow-300 fa-solid fa-star"></i>
+                    <i class="text-yellow-300 fa-solid fa-star"></i>
+                    <i class="text-yellow-300 fa-regular fa-star"></i>
+                    <h6 class="font-semibold text-darkGray my-5">Slate helps you see how many more days you need to work to reach your financial goal.</h6>
+                    <img src="/img/dr.A.png" alt="">
+                </div>
+                <div class="p-10 border border-[#DEDEDE] bg-white">
+                    <i class="text-yellow-300 fa-solid fa-star"></i>
+                    <i class="text-yellow-300 fa-solid fa-star"></i>
+                    <i class="text-yellow-300 fa-solid fa-star"></i>
+                    <i class="text-yellow-300 fa-solid fa-star"></i>
+                    <i class="text-yellow-300 fa-regular fa-star"></i>
+                    <h6 class="font-semibold text-darkGray my-5">Slate helps you see how many more days you need to work to reach your financial goal.</h6>
+                    <img src="/img/dr.B.png" alt="">
+                </div>
+                <div class="p-10 border border-[#DEDEDE] bg-white">
+                    <i class="text-yellow-300 fa-solid fa-star"></i>
+                    <i class="text-yellow-300 fa-solid fa-star"></i>
+                    <i class="text-yellow-300 fa-solid fa-star"></i>
+                    <i class="text-yellow-300 fa-solid fa-star"></i>
+                    <i class="text-yellow-300 fa-regular fa-star"></i>
+                    <h6 class="font-semibold text-darkGray my-5">Slate helps you see how many more days you need to work to reach your financial goal.</h6>
+                    <img src="/img/dr.C.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faqs py-10 bg-lightGray">
+        <div class="container">
+            <h1 class="text-center font-bold text-[2.5rem] text-secondary">FAQ</h1>
+            <p class="text-center text-darkGray mb-10 lg:w-[500px] lg:mx-auto">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+
+            <div class="card grid grid-cols-1 md:grid-cols-3 gap-5">   
+                <div class="flex items-baseline gap-3 p-10  bg-white">
+                    <img src="/img/arrow-right.png" alt="">
+                    <div>
+                        <p class="font-semibold text-secondary text-lg">the quick fox jumps over the lazy dog</p>
+                        <h6 class="font-semibold text-darkGray my-5">Things on a very small scale ...</h6>
+                    </div>
+                </div>
+                <div class="flex items-baseline gap-3 p-10  bg-white">
+                    <img src="/img/arrow-right.png" alt="">
+                    <div>
+                        <p class="font-semibold text-secondary text-lg">the quick fox jumps over the lazy dog</p>
+                        <h6 class="font-semibold text-darkGray my-5">Things on a very small scale ...</h6>
+                    </div>
+                </div>
+                <div class="flex items-baseline gap-3 p-10  bg-white">
+                    <img src="/img/arrow-right.png" alt="">
+                    <div>
+                        <p class="font-semibold text-secondary text-lg">the quick fox jumps over the lazy dog</p>
+                        <h6 class="font-semibold text-darkGray my-5">Things on a very small scale ...</h6>
+                    </div>
+                </div>
+                <div class="flex items-baseline gap-3 p-10  bg-white">
+                    <img src="/img/arrow-right.png" alt="">
+                    <div>
+                        <p class="font-semibold text-secondary text-lg">the quick fox jumps over the lazy dog</p>
+                        <h6 class="font-semibold text-darkGray my-5">Things on a very small scale ...</h6>
+                    </div>
+                </div>
+                <div class="flex items-baseline gap-3 p-10  bg-white">
+                    <img src="/img/arrow-right.png" alt="">
+                    <div>
+                        <p class="font-semibold text-secondary text-lg">the quick fox jumps over the lazy dog</p>
+                        <h6 class="font-semibold text-darkGray my-5">Things on a very small scale ...</h6>
+                    </div>
+                </div>
+                <div class="flex items-baseline gap-3 p-10  bg-white">
+                    <img src="/img/arrow-right.png" alt="">
+                    <div>
+                        <p class="font-semibold text-secondary text-lg">the quick fox jumps over the lazy dog</p>
+                        <h6 class="font-semibold text-darkGray my-5">Things on a very small scale ...</h6>
+                    </div>
+                </div>
+                <div class="flex items-baseline gap-3 p-10  bg-white">
+                    <img src="/img/arrow-right.png" alt="">
+                    <div>
+                        <p class="font-semibold text-secondary text-lg">the quick fox jumps over the lazy dog</p>
+                        <h6 class="font-semibold text-darkGray my-5">Things on a very small scale ...</h6>
+                    </div>
+                </div>
+                <div class="flex items-baseline gap-3 p-10  bg-white">
+                    <img src="/img/arrow-right.png" alt="">
+                    <div>
+                        <p class="font-semibold text-secondary text-lg">the quick fox jumps over the lazy dog</p>
+                        <h6 class="font-semibold text-darkGray my-5">Things on a very small scale ...</h6>
+                    </div>
+                </div>
+                <div class="flex items-baseline gap-3 p-10  bg-white">
+                    <img src="/img/arrow-right.png" alt="">
+                    <div>
+                        <p class="font-semibold text-secondary text-lg">the quick fox jumps over the lazy dog</p>
+                        <h6 class="font-semibold text-darkGray my-5">Things on a very small scale ...</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing py-10 bg-lightGray">
+        <div class="container">
+            <h1 class="text-center font-bold text-[2.5rem] text-secondary">Pricing</h1>
+            <p class="text-center text-darkGray mb-10 lg:w-[500px] lg:mx-auto">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+
+            <div class="cardpricing grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-0 text-center items-center">   
+                <div class="prices p-10 border border-primary rounded-lg bg-white">
+                    <h2 class="text-[2rem] font-bold mb-5">FREE</h2>
+                    <p class="font-bold text-[1.2rem] mb-5">Organize across all apps by hand</p>
+                    <div class="flex items-center justify-center text-primary gap-3 mb-5">
+                        <h2 class="text-[2.5rem] font-bold">0</h2>
+                        <div>
+                            <p class="font-bold text-left">$</p>
+                            <p>per Month</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 mb-3 lg:gap-5 font-bold">
+                        <img src="/img/list-style-main.png" alt="">
+                        <p>Unlimited Product Updates</p>
+                    </div>
+                    <div class="flex items-center gap-4 mb-3 lg:gap-5 font-bold">
+                        <img src="/img/list-style-main.png" alt="">
+                        <p>Unlimited Product Updates</p justify-center>
+                    </div>
+                    <div class="flex items-center gap-4 mb-3 lg:gap-5 font-bold">
+                        <img src="/img/list-style-main.png" alt="">
+                        <p>Unlimited Product Updates</p>
+                    </div>
+                    <div class="flex items-center gap-4 mb-3 lg:gap-5 font-bold">
+                        <img src="/img/list-style-gray.png" alt="">
+                        <p>1GB Cloud Storage</p>
+                    </div>
+                    <div class="flex items-center gap-4 mb-3 lg:gap-5 font-bold">
+                        <img src="/img/list-style-gray.png" alt="">
+                        <p class="text-left">Email and community support</p>
+                    </div>
+                    <button class="bg-primary text-center w-full mt-5 p-5 rounded-lg text-white font-semibold">Try for Free</button>
+                </div>
+                <div class="prices p-10 py-20 border border-primary rounded-lg bg-secondary text-white">
+                    <h2 class="text-[2rem] font-bold mb-5">STANDARD</h2>
+                    <p class="font-bold text-[1.2rem] mb-5">Organize across all apps by hand</p>
+                    <div class="flex items-center justify-center text-primary gap-3 mb-5">
+                        <h2 class="text-[2.5rem] font-bold">0</h2>
+                        <div>
+                            <p class="font-bold text-left">$</p>
+                            <p>per Month</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 mb-3 lg:gap-5 font-bold">
+                        <img src="/img/list-style-main.png" alt="">
+                        <p>Unlimited Product Updates</p>
+                    </div>
+                    <div class="flex items-center gap-4 mb-3 lg:gap-5 font-bold">
+                        <img src="/img/list-style-main.png" alt="">
+                        <p>Unlimited Product Updates</p justify-center>
+                    </div>
+                    <div class="flex items-center gap-4 mb-3 lg:gap-5 font-bold">
+                        <img src="/img/list-style-main.png" alt="">
+                        <p>Unlimited Product Updates</p>
+                    </div>
+                    <div class="flex items-center gap-4 mb-3 lg:gap-5 font-bold">
+                        <img src="/img/list-style-gray.png" alt="">
+                        <p>1GB Cloud Storage</p>
+                    </div>
+                    <div class="flex items-center gap-4 mb-3 lg:gap-5 font-bold">
+                        <img src="/img/list-style-gray.png" alt="">
+                        <p class="text-left">Email and community support</p>
+                    </div>
+                    <button class="bg-primary text-center w-full mt-5 p-5 rounded-lg text-white font-semibold">Try for Free</button>
+                </div>
+                <div class="prices p-10 border border-primary rounded-lg bg-white">
+                    <h2 class="text-[2rem] font-bold mb-5">PREMIUM</h2>
+                    <p class="font-bold text-[1.2rem] mb-5">Organize across all apps by hand</p>
+                    <div class="flex items-center justify-center text-primary gap-3 mb-5">
+                        <h2 class="text-[2.5rem] font-bold">0</h2>
+                        <div>
+                            <p class="font-bold text-left">$</p>
+                            <p>per Month</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 mb-3 lg:gap-5 font-bold">
+                        <img src="/img/list-style-main.png" alt="">
+                        <p>Unlimited Product Updates</p>
+                    </div>
+                    <div class="flex items-center gap-4 mb-3 lg:gap-5 font-bold">
+                        <img src="/img/list-style-main.png" alt="">
+                        <p>Unlimited Product Updates</p justify-center>
+                    </div>
+                    <div class="flex items-center gap-4 mb-3 lg:gap-5 font-bold">
+                        <img src="/img/list-style-main.png" alt="">
+                        <p>Unlimited Product Updates</p>
+                    </div>
+                    <div class="flex items-center gap-4 mb-3 lg:gap-5 font-bold">
+                        <img src="/img/list-style-gray.png" alt="">
+                        <p>1GB Cloud Storage</p>
+                    </div>
+                    <div class="flex items-center gap-4 mb-3 lg:gap-5 font-bold">
+                        <img src="/img/list-style-gray.png" alt="">
+                        <p class="text-left">Email and community support</p>
+                    </div>
+                    <button class="bg-primary text-center w-full mt-5 p-5 rounded-lg text-white font-semibold">Try for Free</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe bg-secondary text-white py-10">
+        <div class="container">
+            
+            <div>
+                <h1 class="text-[2rem] text-center mb-5 md:hidden">Subscribe For Latest Newsletter</h1>
+                
+                <div class="md:flex items-center justify-between">
+                    <div class="w-[450px]">
+                        <h1 class="text-[2rem] hidden md:block font-bold">Get in Touch</h1>
+                        <p class="hidden md:block">The gradual accumulation of information about atomic and small-scale behaviour during the first quarter of the 20th</p>
+                    </div>
+                    <div class="flex">
+                        <input class="p-3" type="text" placeholder="Your Email">
+                        <button class="p-3 bg-primary border border-white">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-10">
+        <div class="container">
+            
+            <div class="footerWrapper p-10 md:p-0 md:flex justify-between">
+                <div class="mb-10 md:mb-0">
+                    <h1 class="text-[2rem] font-bold">Get in Touch</h1>
+                    <p>the quick fox jumps over the lazy dog</p>
+                    <ul class="flex gap-5 text-[1.5rem] text-primary">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="mb-10 md:mb-0">
+                    <h1 class="text-[2rem] font-bold">Company Info</h1>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Carrier</a></li>
+                        <li><a href="#">We are hiring</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="mb-10 md:mb-0">
+                    <h1 class="text-[2rem] font-bold">Features</h1>
+                    <ul>
+                        <li><a href="#">Business Marketing</a></li>
+                        <li><a href="#">User Analytic</a></li>
+                        <li><a href="#">Live Chat</a></li>
+                        <li><a href="#">Unlimited support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="text-[2rem] font-bold">Resources</h1>
+                    <ul>
+                        <li><a href="#">Android & IOS</a></li>
+                        <li><a href="#">Watch a demo</a></li>
+                        <li><a href="#">Customers</a></li>
+                        <li><a href="#">Api</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <footer class="footer2 bg-lightGray py-5">
+        <div class="container">
+            <p class="text-center">Made With Love By Figmaland All Right Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        const toggleMenu = document.querySelector('.toggleMenu');
+        const headerMobileNav = document.querySelector('.headerMobileNav');
+
+        toggleMenu.addEventListener('click', ()=>{
+            headerMobileNav.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
